@@ -45,7 +45,7 @@ try {
     const commandsFile = require(`./commands/${cmd}.js`);
     commandsFile.run(client, message, args);
   } catch (e) {
-    return message.reply("Command Not Found")
+    return console.log("Command Not Found")
   }
   
 })
